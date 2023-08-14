@@ -3,6 +3,7 @@ import { Urbanist } from "next/font/google";
 
 import "./globals.css";
 
+import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 const customFont = Urbanist({ subsets: ["latin"] });
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={customFont.className}>
+        <Navbar />
         {children}
         <Footer />
       </body>
