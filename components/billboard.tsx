@@ -12,9 +12,9 @@ export default function Billboard({ data }: BillboardProps) {
         style={{ backgroundImage: `url(${data?.imageUrl})` }}
       >
         <div className="flex flex-col justify-center items-center text-center gap-y-8 h-full w-full">
-          <div className="max-w-xs sm:max-w-xl font-bold text-3xl sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-xs sm:max-w-xl font-bold text-3xl sm:text-5xl lg:text-6xl text-white">
             {data.label}
-          </div>
+          </h1>
         </div>
       </div>
     </div>
